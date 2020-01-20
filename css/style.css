@@ -5,14 +5,14 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
   color: grey;
 }
 a:hover,
-a:focuse,
+a:focus,
 a:active {
 color: black;
 }
@@ -21,7 +21,7 @@ color: black;
 }
 .list-inline li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 60px;
   padding: 0 10px;
 }
 .clearfix {
@@ -31,18 +31,48 @@ color: black;
 }
 .float-left {
   float: left;
-  background-color: red;
 }
 .float-right {
   float: right;
-  background-color: yellow;
+}
+.wrapper {
+  width: 90%;
+  margin: 20px auto;
 }
 header {
-  height: 80px;
+  height: 60px;
+}
+nav {
+  width: 100%;
 }
 a img {
   width: 90px;
-  margin-bottom: 5px;
-  line-height: 80px;
+  margin-bottom: 6px;
+  line-height: 60px;
   vertical-align: middle;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: rgb(247, 4, 87);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.relative{
+  position: relative;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 95px;
+  width: 120px;
+  text-align: center;
+  background-color: white;
+  filter:drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+}
+.dropdown.active {
+  display: block;
 }
